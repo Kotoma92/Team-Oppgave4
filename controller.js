@@ -37,7 +37,7 @@ function convertToMorse(input) {
 		const letter = arrayOfInput[i]; //Sets the value of arrayOfInput index to the variable letter.
 		let indexOfLetter = alphabetArray.indexOf(letter); // expected: if letter = "c" then indexOfLetter = 2
 
-		morseCode += morseCodeArray[indexOfLetter];
+		morseCode += morseCodeArray[indexOfLetter] + ' ';
 	}
 
 	console.log('Returned value: ', morseCode);
@@ -55,7 +55,7 @@ function isLetterInAlphabet(arr) {
 			return false;
 		}
 	}
-	//If loops finishes withouth returning any value, it returns true. Meaning that the array does not contain any letter that isnt in the alphabet array.
+	//If loops finishes without returning any value, it returns true. Meaning that the array does not contain any letter that isn't in the alphabet array.
 	return true;
 }
 
@@ -69,7 +69,7 @@ function copyToClipboard() {
 	}
 }
 
-//https://stackoverflow.com/questions/2652319/how-do-you-check-that-a-number-is-nan-in-javascript
+// https://stackoverflow.com/questions/2652319/how-do-you-check-that-a-number-is-nan-in-javascript
 //Checks if array contains a number-
 // function containsNumber(arr) {
 // 	//Loops through array
