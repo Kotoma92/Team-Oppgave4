@@ -37,7 +37,7 @@ function convertToMorse(input) {
 		const letter = arrayOfInput[i]; //Sets the value of arrayOfInput index to the variable letter.
 		let indexOfLetter = alphabetArray.indexOf(letter); // expected: if letter = "c" then indexOfLetter = 2
 
-		morseCode += morseCodeArray[indexOfLetter] + ' ';
+		morseCode += morseCodeArray[indexOfLetter] + ' '; //Gets the index of the letter from alphabetArray and get the corresponding morse code from its array.
 	}
 
 	console.log('Returned value: ', morseCode);
